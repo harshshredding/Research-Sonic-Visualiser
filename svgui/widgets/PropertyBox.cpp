@@ -750,6 +750,7 @@ PropertyBox::zoomFrequencySignalDetected(){
     if (layer = qobject_cast<SpectrumLayer *>(m_container)) {
         layer->setFrequenciesForZoom(startFrequency, endFrequency);
     }
+    emit undoSignal();
 }
 
 void

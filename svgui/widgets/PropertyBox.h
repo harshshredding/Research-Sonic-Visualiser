@@ -46,6 +46,7 @@ signals:
     void showLayer(bool);
     void contextHelpChanged(const QString &);
     void zoomButtonPressed(double, double);
+    void undoSignal();
  //   void zoomFrequencyButtonPressed(int, int);
 
 public slots:

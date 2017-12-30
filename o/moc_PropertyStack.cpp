@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_PropertyStack_t {
-    QByteArrayData data[22];
-    char stringdata0[381];
+    QByteArrayData data[23];
+    char stringdata0[391];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -45,14 +45,15 @@ QT_MOC_LITERAL(10, 138, 24), // "propertyContainerRemoved"
 QT_MOC_LITERAL(11, 163, 32), // "propertyContainerPropertyChanged"
 QT_MOC_LITERAL(12, 196, 37), // "propertyContainerPropertyRang..."
 QT_MOC_LITERAL(13, 234, 28), // "propertyContainerNameChanged"
-QT_MOC_LITERAL(14, 263, 9), // "showLayer"
-QT_MOC_LITERAL(15, 273, 18), // "mouseEnteredTabBar"
-QT_MOC_LITERAL(16, 292, 15), // "mouseLeftTabBar"
-QT_MOC_LITERAL(17, 308, 16), // "activeTabClicked"
-QT_MOC_LITERAL(18, 325, 12), // "zoomDetected"
-QT_MOC_LITERAL(19, 338, 9), // "startTime"
-QT_MOC_LITERAL(20, 348, 7), // "endTime"
-QT_MOC_LITERAL(21, 356, 24) // "selectedContainerChanged"
+QT_MOC_LITERAL(14, 263, 9), // "undoStuff"
+QT_MOC_LITERAL(15, 273, 9), // "showLayer"
+QT_MOC_LITERAL(16, 283, 18), // "mouseEnteredTabBar"
+QT_MOC_LITERAL(17, 302, 15), // "mouseLeftTabBar"
+QT_MOC_LITERAL(18, 318, 16), // "activeTabClicked"
+QT_MOC_LITERAL(19, 335, 12), // "zoomDetected"
+QT_MOC_LITERAL(20, 348, 9), // "startTime"
+QT_MOC_LITERAL(21, 358, 7), // "endTime"
+QT_MOC_LITERAL(22, 366, 24) // "selectedContainerChanged"
 
     },
     "PropertyStack\0viewSelected\0\0View*\0"
@@ -62,10 +63,11 @@ QT_MOC_LITERAL(21, 356, 24) // "selectedContainerChanged"
     "propertyContainerRemoved\0"
     "propertyContainerPropertyChanged\0"
     "propertyContainerPropertyRangeChanged\0"
-    "propertyContainerNameChanged\0showLayer\0"
-    "mouseEnteredTabBar\0mouseLeftTabBar\0"
-    "activeTabClicked\0zoomDetected\0startTime\0"
-    "endTime\0selectedContainerChanged"
+    "propertyContainerNameChanged\0undoStuff\0"
+    "showLayer\0mouseEnteredTabBar\0"
+    "mouseLeftTabBar\0activeTabClicked\0"
+    "zoomDetected\0startTime\0endTime\0"
+    "selectedContainerChanged"
 };
 #undef QT_MOC_LITERAL
 
@@ -75,7 +77,7 @@ static const uint qt_meta_data_PropertyStack[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
+      15,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -83,22 +85,23 @@ static const uint qt_meta_data_PropertyStack[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   84,    2, 0x06 /* Public */,
-       5,    2,   87,    2, 0x06 /* Public */,
-       8,    1,   92,    2, 0x06 /* Public */,
+       1,    1,   89,    2, 0x06 /* Public */,
+       5,    2,   92,    2, 0x06 /* Public */,
+       8,    1,   97,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       9,    1,   95,    2, 0x0a /* Public */,
-      10,    1,   98,    2, 0x0a /* Public */,
-      11,    1,  101,    2, 0x0a /* Public */,
-      12,    1,  104,    2, 0x0a /* Public */,
-      13,    1,  107,    2, 0x0a /* Public */,
-      14,    1,  110,    2, 0x0a /* Public */,
-      15,    0,  113,    2, 0x0a /* Public */,
-      16,    0,  114,    2, 0x0a /* Public */,
-      17,    0,  115,    2, 0x0a /* Public */,
-      18,    2,  116,    2, 0x0a /* Public */,
-      21,    1,  121,    2, 0x09 /* Protected */,
+       9,    1,  100,    2, 0x0a /* Public */,
+      10,    1,  103,    2, 0x0a /* Public */,
+      11,    1,  106,    2, 0x0a /* Public */,
+      12,    1,  109,    2, 0x0a /* Public */,
+      13,    1,  112,    2, 0x0a /* Public */,
+      14,    0,  115,    2, 0x0a /* Public */,
+      15,    1,  116,    2, 0x0a /* Public */,
+      16,    0,  119,    2, 0x0a /* Public */,
+      17,    0,  120,    2, 0x0a /* Public */,
+      18,    0,  121,    2, 0x0a /* Public */,
+      19,    2,  122,    2, 0x0a /* Public */,
+      22,    1,  127,    2, 0x09 /* Protected */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -111,11 +114,12 @@ static const uint qt_meta_data_PropertyStack[] = {
     QMetaType::Void, 0x80000000 | 6,    2,
     QMetaType::Void, 0x80000000 | 6,    2,
     QMetaType::Void, 0x80000000 | 6,    2,
+    QMetaType::Void,
     QMetaType::Void, QMetaType::Bool,    2,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Double, QMetaType::Double,   19,   20,
+    QMetaType::Void, QMetaType::Double, QMetaType::Double,   20,   21,
     QMetaType::Void, QMetaType::Int,    2,
 
        0        // eod
@@ -135,12 +139,13 @@ void PropertyStack::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 5: _t->propertyContainerPropertyChanged((*reinterpret_cast< PropertyContainer*(*)>(_a[1]))); break;
         case 6: _t->propertyContainerPropertyRangeChanged((*reinterpret_cast< PropertyContainer*(*)>(_a[1]))); break;
         case 7: _t->propertyContainerNameChanged((*reinterpret_cast< PropertyContainer*(*)>(_a[1]))); break;
-        case 8: _t->showLayer((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 9: _t->mouseEnteredTabBar(); break;
-        case 10: _t->mouseLeftTabBar(); break;
-        case 11: _t->activeTabClicked(); break;
-        case 12: _t->zoomDetected((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
-        case 13: _t->selectedContainerChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->undoStuff(); break;
+        case 9: _t->showLayer((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 10: _t->mouseEnteredTabBar(); break;
+        case 11: _t->mouseLeftTabBar(); break;
+        case 12: _t->activeTabClicked(); break;
+        case 13: _t->zoomDetected((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
+        case 14: _t->selectedContainerChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -195,13 +200,13 @@ int PropertyStack::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 15;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 15)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 14;
+        _id -= 15;
     }
     return _id;
 }

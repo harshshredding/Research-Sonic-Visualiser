@@ -113,6 +113,7 @@ PropertyStack::repopulate()
     if(qobject_cast<SpectrumLayer *>(box->m_container)){
     connect(m_client, SIGNAL(sendStartingFrequency(int)), box, SLOT(receiveStartingFrequencyFromView(int)));
     connect(m_client, SIGNAL(sendEndingFrequency(int)), box, SLOT(receiveEndingFrequencyFromView(int)));
+    connect(box, SIGNAL(undoSignal()), this, SLOT(undoStuff()));
     }
     connect(box, SIGNAL(showLayer(bool)), this, SLOT(showLayer(bool)));
         connect(box, SIGNAL(contextHelpChanged(const QString &)),
@@ -185,6 +186,10 @@ PropertyStack::getContainerIndex(PropertyContainer *pc) const
     }
 
     return false;
+}
+void
+PropertyStack::undoStuff(){
+    CommandHistory::getInstance()->undo();
 }
 
 void
