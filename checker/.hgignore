@@ -1,0 +1,8 @@
+syntax: glob
+*~
+*.o
+*.a
+Makefile*
+checker-client
+plugin-checker-helper
+vamp-plugin-load-checker
