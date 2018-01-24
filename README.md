@@ -119,3 +119,4 @@ For more information about Sonic Visualiser, please go to
 
   http://www.sonicvisualiser.org/
 
+# DubSwap
